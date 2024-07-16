@@ -1,0 +1,37 @@
+{
+	"name": "template-project",
+	"version": "1.0.0",
+	"description": "",
+	"main": "",
+	"scripts": {
+		"install-lib": "npm install webpack webpack-cli webpack-dev-server html-webpack-plugin clean-webpack-plugin @babel/core @babel/preset-env core-js babel-loader css-loader mini-css-extract-plugin postcss-loader autoprefixer cssnano terser-webpack-plugin gh-pages --save-dev",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"build": "webpack --mode production",
+		"dev": "webpack serve"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.24.7",
+		"@babel/preset-env": "^7.24.7",
+		"autoprefixer": "^10.4.19",
+		"babel-loader": "^9.1.3",
+		"clean-webpack-plugin": "^4.0.0",
+		"core-js": "^3.37.1",
+		"css-loader": "^7.1.2",
+		"cssnano": "^7.0.4",
+		"file-loader": "^6.2.0",
+		"gh-pages": "^6.1.1",
+		"html-webpack-plugin": "^5.6.0",
+		"mini-css-extract-plugin": "^2.9.0",
+		"postcss-loader": "^8.1.1",
+		"pug": "^2.0.4",
+		"pug-loader": "^2.4.0",
+		"terser-webpack-plugin": "^5.3.10",
+		"webpack": "^5.92.1",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^5.0.4"
+	},
+	"sideEffects": true
+}

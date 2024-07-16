@@ -1,0 +1,16 @@
+/* GLOBAL ---------------------------------------------------- */
+@import url(../../../style/normalize.css);
+@import url(../../../style/fonts.css);
+@import url(../../../style/variables.css);
+@import url(../../../style/global.css);
+
+/* PAGE ------------------------------------------------------ */
+@import url(./root.css);
+
+/* COMPONENTS ------------------------------------------------ */
+@import url(../../widgets/header/Header.css);
+@import url(../../widgets/footer/Footer.css);
+
+/* POPUP ----------------------------------------------------- */
+
+/* SECTIONS -------------------------------------------------- */

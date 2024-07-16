@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: var(--background-color-main);
+}
+
+body {
+	overflow-x: hidden;
+}
+
+a {
+	color: inherit;
+	font-style: normal;
+	text-decoration: none;
+	list-style: none;
+}
+
+button,
+input {
+	border: none;
+	outline: none;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+li,
+ol {
+	text-decoration: none;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+}
+
+input::placeholder {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
