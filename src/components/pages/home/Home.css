@@ -14,3 +14,122 @@
 /* POPUP ----------------------------------------------------- */
 
 /* SECTIONS -------------------------------------------------- */
+
+.Button {
+	padding-inline: 30px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding-block: 6px;
+}
+
+.Button--disabled {
+	pointer-events: none;
+	opacity: 20%;
+}
+
+.List {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3rem;
+}
+
+.List__item {
+}
+
+.Project {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	margin-inline: 10%;
+	padding-inline: 2%;
+	padding-block: 20px;
+	background-color: #ffffff10;
+}
+
+.Project__wrapper {
+	inline-size: 95%;
+}
+
+.Project__id {
+	position: absolute;
+	font-weight: bold;
+	font-size: 20px;
+	top: 10px;
+	right: 10px;
+}
+
+.Project__title {
+	font-size: 20px;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+
+.Project__description {
+	font-size: 14px;
+	margin-block-start: 20px;
+}
+
+.Project__note {
+	font-size: 14px;
+	opacity: 60%;
+	margin-block-start: 20px;
+}
+
+.Project__controller {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-block-start: 30px;
+}
+
+.Project__btn-figma {
+}
+
+.Project__btn-git {
+}
+
+.Project__btn-task {
+}
+
+.Project__btn-wiki {
+}
+
+.Project__btn-public {
+}
+
+.Project__tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-block-start: 30px;
+}
+
+.Project__tag {
+	padding-inline: 20px;
+	font-size: 14px;
+	background-color: #ffffff20;
+	border-radius: 14px;
+	opacity: 40%;
+	padding-block: 8px;
+	transition: all 0.5s;
+}
+
+.Project__tag:hover {
+	padding-inline: 40px;
+	opacity: 60%;
+	background-color: #a5ff2680;
+}
+
+.Project__present_wrapper {
+	margin-block-start: 30px;
+	inline-size: 100%;
+	block-size: 500px;
+	overflow-y: scroll;
+}
+
+.Project__present {
+	object-fit: contain;
+	inline-size: 100%;
+	object-position: top;
+}

@@ -4,4 +4,37 @@ block variables
     - var title = 'Home';
 
 block content
-    h3 CONTENT - HOME
+    ul(id='projects-list' class='List')
+
+    template(id='project-template')
+        article.Project
+            .Project__wrapper
+                span.Project__id
+                h2.Project__title
+                .Project__tags
+                p.Project__description
+                p.Project__note
+                .Project__controller
+                    a(class='Button Project__btn-figma' href='#!' target='_blank' rel='noopener')
+                    a(class='Button Project__btn-git' href='#!' target='_blank' rel='noopener')
+                    a(class='Button Project__btn-task' href='#!' target='_blank' rel='noopener')
+                    a(class='Button Project__btn-wiki' href='#!' target='_blank' rel='noopener')
+                    a(class='Button Project__btn-public' href='#!' target='_blank' rel='noopener')
+
+                .Project__present_wrapper
+                    img(class="Project__present")
+
+
+//- <template id="card-template">
+//-     <li class="places__item card">
+//-         <img class="card__image" src="" alt="" />
+//-         <button type="button" class="card__button-delete"></button>
+//-         <div class="card__description">
+//-             <h2 class="card__title"></h2>
+//-             <button type="button" class="card__button-like">
+//-                 <img class="card__like-svg" src="<%=require('./images/like-inactive.svg')%>" alt="" />
+//-                 <span class="card__like-count"></span>
+//-             </button>
+//-         </div>
+//-     </li>
+//- </template>
